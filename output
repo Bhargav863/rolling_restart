@@ -1,0 +1,66 @@
+22:57:37 Started by user Bhargav
+22:57:37 Running as SYSTEM
+22:57:37 Building in workspace /var/lib/jenkins/workspace/pod_restart
+22:57:37 [pod_restart] $ /bin/bash /tmp/jenkins1003108705934559677.sh
+22:57:37 Get current number of pods in roboshop namespace:
+22:57:38 Number of pods before restart: 21
+22:57:38 Performing rolling restart of deployments...
+22:57:38 deployment.apps/cart restarted
+22:57:38 deployment.apps/catalogue restarted
+22:57:38 deployment.apps/mongodb restarted
+22:57:38 deployment.apps/mysql restarted
+22:57:38 deployment.apps/payment restarted
+22:57:38 deployment.apps/rabbitmq restarted
+22:57:38 deployment.apps/redis restarted
+22:57:38 deployment.apps/shipping restarted
+22:57:38 deployment.apps/user restarted
+22:57:38 deployment.apps/web restarted
+22:57:38 Waiting for deployments to finish the rollout...
+22:57:39 Waiting for deployment "cart" rollout to finish: 1 out of 2 new replicas have been updated...
+22:57:40 Waiting for deployment "cart" rollout to finish: 1 out of 2 new replicas have been updated...
+22:57:41 Waiting for deployment "cart" rollout to finish: 1 out of 2 new replicas have been updated...
+22:57:42 Waiting for deployment "cart" rollout to finish: 1 old replicas are pending termination...
+22:57:43 Waiting for deployment "cart" rollout to finish: 1 old replicas are pending termination...
+22:57:45 deployment "cart" successfully rolled out
+22:57:45 Waiting for deployment "catalogue" rollout to finish: 1 old replicas are pending termination...
+22:57:45 Waiting for deployment "catalogue" rollout to finish: 1 old replicas are pending termination...
+22:57:46 deployment "catalogue" successfully rolled out
+22:57:46 deployment "mongodb" successfully rolled out
+22:57:46 Waiting for deployment "mysql" rollout to finish: 1 old replicas are pending termination...
+22:57:46 deployment "mysql" successfully rolled out
+22:57:46 deployment "payment" successfully rolled out
+22:57:46 deployment "rabbitmq" successfully rolled out
+22:57:46 deployment "redis" successfully rolled out
+22:57:46 deployment "shipping" successfully rolled out
+22:57:46 deployment "user" successfully rolled out
+22:57:46 deployment "web" successfully rolled out
+22:57:46 Waiting for pod count to stabilize...
+22:57:47 Current pod count: 30
+22:57:47 Pods count doesn't match yet. Sleeping 30 seconds...
+22:58:18 Current pod count: 21
+22:58:18 Pod count matches original. All pods likely restarted.
+22:58:18 Final list of pods in roboshop:
+22:58:19 NAME                         READY   STATUS    RESTARTS   AGE
+22:58:19 cart-74f86bfb6b-k8str        1/1     Running   0          41s
+22:58:19 cart-74f86bfb6b-rg4qb        1/1     Running   0          38s
+22:58:19 catalogue-757f8ccf6d-74jcp   1/1     Running   0          36s
+22:58:19 catalogue-757f8ccf6d-pxzjl   1/1     Running   0          41s
+22:58:19 mongodb-77bf99c9b9-gjb4h     1/1     Running   0          41s
+22:58:19 mongodb-77bf99c9b9-x5m8g     1/1     Running   0          38s
+22:58:19 mysql-8b5b7d5cb-dpg75        1/1     Running   0          36s
+22:58:19 mysql-8b5b7d5cb-vc55f        1/1     Running   0          41s
+22:58:19 payment-5c65b9b854-cr46q     1/1     Running   0          37s
+22:58:19 payment-5c65b9b854-m4qn5     1/1     Running   0          41s
+22:58:19 rabbitmq-54859dbb87-4778j    1/1     Running   0          38s
+22:58:19 rabbitmq-54859dbb87-jlkng    1/1     Running   0          41s
+22:58:19 redis-975f9b5fc-7hsl8        1/1     Running   0          40s
+22:58:19 redis-975f9b5fc-hf877        1/1     Running   0          36s
+22:58:19 shipping-754f769fc8-59h2p    1/1     Running   0          40s
+22:58:19 shipping-754f769fc8-wnm4j    1/1     Running   0          39s
+22:58:19 user-594d57c44f-kq7bd        1/1     Running   0          40s
+22:58:19 user-594d57c44f-lmncb        1/1     Running   0          37s
+22:58:19 web-64d75445b-57dv9          1/1     Running   0          39s
+22:58:19 web-64d75445b-fhcdb          1/1     Running   0          36s
+22:58:19 web-64d75445b-qwqbt          1/1     Running   0          40s
+22:58:19 Job completed successfully.
+22:58:19 Finished: SUCCESS

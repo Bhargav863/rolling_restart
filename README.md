@@ -24,6 +24,10 @@ You have to create a robust, non-interactive jenkins job that restarts all deplo
      ```
      kubectl apply -f rolebinding.yaml
      ```
-
-     
+**4) Create token for your service account and add it as secret text in jenkins credentials.**
+   
+     ```
+     kubectl create token -n roboshop jenkins
+     ```
+  
 
