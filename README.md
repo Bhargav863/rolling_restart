@@ -14,10 +14,9 @@ You have to create a robust, non-interactive jenkins job that restarts all deplo
 **2) Create a role for the service account with the access that service account needs to have**
 
    * jenkins_sa_role.yaml --> Defines permission within the namespace.
-     
-    ```
-    kubectl apply -f jenkins_sa_role.yaml
-    ```
+      ```
+      kubectl apply -f jenkins_sa_role.yaml
+      ```
 
 **3) Bind the role with service account that the service account can get the permission to update/delete the pods in the namespace**
   
